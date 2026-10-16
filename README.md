@@ -35,14 +35,14 @@ Mọi thay đổi dữ liệu đi qua lớp domain và ghi 1 dòng `events` tron
 
 Cần [Claude Code](https://claude.com/claude-code). App sinh ra dùng Node 20+, pnpm, Docker (Postgres), Playwright để verify.
 
-Tải repo này về rồi copy thư mục vào thư mục skill của Claude Code:
+Clone repo vào thư mục skill của Claude Code:
 
 ```bash
 # macOS / Linux
-cp -r clone-saas-app ~/.claude/skills/clone-saas-app
+git clone https://github.com/thanhthuduc99/clone-saas-app ~/.claude/skills/clone-saas-app
 
 # Windows (PowerShell)
-Copy-Item -Recurse clone-saas-app "$env:USERPROFILE\.claude\skills\clone-saas-app"
+git clone https://github.com/thanhthuduc99/clone-saas-app "$env:USERPROFILE\.claude\skills\clone-saas-app"
 ```
 
 Mở Claude Code, gõ `/clone-saas-app` hoặc nói thẳng yêu cầu.
